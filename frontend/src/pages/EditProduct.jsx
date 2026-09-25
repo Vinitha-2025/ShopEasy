@@ -34,7 +34,7 @@ const EditProduct = () => {
         setError("");
 
         const response = await fetch(
-          `http://localhost:5000/api/products/${id}`
+          `https://shop-easy-snowy-seven.vercel.app/api/products/${id}`
         );
 
         const data = await response.json();
@@ -101,7 +101,7 @@ const EditProduct = () => {
       setMessage("");
 
       const response = await fetch(
-        `http://localhost:5000/api/products/${id}`,
+        `https://shop-easy-snowy-seven.vercel.app/api/products/${id}`,
         {
           method: "PUT",
           headers: {

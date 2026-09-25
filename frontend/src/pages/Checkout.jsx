@@ -213,7 +213,7 @@ const Checkout = () => {
       // -----------------------------
 
       const response = await fetch(
-        "http://localhost:5000/api/payment/create-order",
+        "https://shop-easy-snowy-seven.vercel.app/api/payment/create-order",
         {
           method: "POST",
           headers: {
@@ -366,7 +366,7 @@ const Checkout = () => {
             // -----------------------------
 
             const orderResponse = await fetch(
-              "http://localhost:5000/api/orders",
+              "https://shop-easy-snowy-seven.vercel.app/api/orders",
               {
                 method: "POST",
 

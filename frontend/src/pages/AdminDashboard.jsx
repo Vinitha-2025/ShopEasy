@@ -15,7 +15,7 @@ const AdminDashboard = () => {
     const fetchStats = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/admin/stats"
+          "https://shop-easy-snowy-seven.vercel.app/api/admin/stats"
         );
 
         const data = await response.json();

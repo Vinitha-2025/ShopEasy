@@ -47,7 +47,7 @@ const AddProduct = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/products",
+        "https://shop-easy-snowy-seven.vercel.app/api/products",
         {
           method: "POST",
           headers: {

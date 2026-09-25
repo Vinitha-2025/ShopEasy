@@ -30,7 +30,7 @@ const AdminOrders = () => {
       setError("");
 
       const response = await fetch(
-        "http://localhost:5000/api/orders"
+        "https://shop-easy-snowy-seven.vercel.app/api/orders"
       );
 
       const data = await response.json();
@@ -71,7 +71,7 @@ const AdminOrders = () => {
       setMessage("");
 
       const response = await fetch(
-        `http://localhost:5000/api/orders/${orderId}/status`,
+        `https://shop-easy-snowy-seven.vercel.app/api/orders/${orderId}/status`,
         {
           method: "PUT",
           headers: {

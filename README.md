@@ -156,7 +156,7 @@ npm start
 Backend runs on:
 
 ```text
-http://localhost:5000
+https://shop-easy-snowy-seven.vercel.app
 ```
 
 ### Start Frontend

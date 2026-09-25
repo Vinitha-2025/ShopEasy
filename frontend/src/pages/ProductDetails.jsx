@@ -29,7 +29,7 @@ function ProductDetails() {
         setError("");
 
         const response = await fetch(
-          `http://localhost:5000/api/products/${id}`
+          `https://shop-easy-snowy-seven.vercel.app/api/products/${id}`
         );
 
         if (!response.ok) {
@@ -64,9 +64,7 @@ function ProductDetails() {
         setRelatedLoading(true);
 
         const response = await fetch(
-          `http://localhost:5000/api/products/subcategory/${encodeURIComponent(
-            product.subcategory
-          )}`
+          `https://shop-easy-snowy-seven.vercel.app/api/products/subcategory/${encodeURIComponent(product.subcategory )}`
         );
 
         if (!response.ok) {
@@ -156,7 +154,7 @@ function ProductDetails() {
       <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-5 md:p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Product Image */}
-          <div className="bg-gray-100 rounded-xl overflow-hidden h-[400px] md:h-[500px]">
+          <div className="bg-gray-100 rounded-xl overflow-hidden h-100 md:h-125">
             <img
               src={product.image}
               alt={product.name}

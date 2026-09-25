@@ -37,7 +37,7 @@ const MyOrders = () => {
         );
 
         const response = await fetch(
-          `http://localhost:5000/api/orders/customer/${email}`
+          `https://shop-easy-snowy-seven.vercel.app/api/orders/customer/${email}`
         );
 
         const data = await response.json();
